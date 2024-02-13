@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- outer container for our calculator form -->
+    <div class="form-container">
+        <form action="#">
+            <!-- label and input for first number below -->
+            <label for="var1">Num1 :</label>
+            <input type="number" id="num1">
+            <label for="operator">Select <span><i class="fa-solid fa-arrow-down"></i></span></label>
+            <!-- button container for operator section  -->
+            <div class="btn-container">
+                <!-- I use font-awesome icons for operators -->
+                <button class="plus" data-operator="+"><i class="fa-solid fa-plus"></i></button>
+                <button class="minus" data-operator="-"><i class="fa-solid fa-minus"></i></button>
+                <button class="xmark" data-operator="*"><i class="fa-solid fa-xmark"></i></button>
+                <button class="divide" data-operator="/"><i class="fa-solid fa-divide"></i></button>
+                
+            </div>
+            <!-- label and input for second number below -->
+            <label for="var2">Num2 :</label>
+            <input type="number" id="num2">
+
+            <!-- Readonly Input below for displaying the generated expression -->
+            <label for="expression">Expression:</label>
+            <input type="text" id="expression" name="expression" readonly>
+
+            <!-- Readonly input below for displaying the result -->
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" readonly>
+            <!-- Calculate and clear all buttons in the below btn-container div -->
+            <div class="btn-container-secondary">
+                <button class="functioning-btn" id="calculate">Calculate</button>
+                <button class="functioning-btn" id="clear">Clear All</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

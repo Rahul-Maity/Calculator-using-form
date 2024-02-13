@@ -1,0 +1,80 @@
+/* 
+  Resetting default padding and margin to 0, and box-sizing to border-box 
+  to ensure consistent box model behavior across browsers.
+  Setting a fallback font-family of Verdana, Geneva, Tahoma, sans-serif.
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+  Styling the body element with a background color of light blue-gray.
+*/
+body {
+    background-color: #778da9;
+}
+
+/* 
+  Styling the form element with a light blue background, padding, and flexbox properties 
+  to arrange its children in a column, with gaps between rows.
+  Text alignment, vertical and horizontal alignment of content are centered.
+*/
+form {
+    background-color: #c0d6df;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+  Styling input elements with rounded corners, border, centered text, padding, and a width of 50%.
+*/
+input {
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+}
+
+/* 
+  Styling the output container with flex properties to arrange its children in a row with space between them.
+*/
+.output-container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+  Styling the form container with centered alignment and a width of 50% of its parent container.
+  Also setting margin from the top.
+*/
+.form-container {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 7%;
+}
+
+/* 
+  Styling buttons with margin and cursor pointer.
+*/
+button {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* 
+  Styling buttons inside a container with cursor pointer.
+*/
+.btn-container button {
+    cursor: pointer;
+}
